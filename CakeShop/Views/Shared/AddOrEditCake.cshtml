@@ -14,7 +14,7 @@
                     <option value=""></option>
                     @foreach (var category in Model.Categories)
                     {
-                        <option value="@category.Id">@category.Name</option>
+                    <option value="@category.Id">@category.Name</option>
                     }
                 </select>
                 <span asp-validation-for="CakeDto.CategoryId"></span>
@@ -28,6 +28,12 @@
                 <label asp-for="CakeDto.LongDescription"></label>
                 <textarea asp-for="CakeDto.LongDescription" class="form-control"></textarea>
                 <span asp-validation-for="CakeDto.LongDescription"></span>
+            </div>
+            <!--Actual Listing for Calories on the website in the admin panel. This is where admins actually edit the value of the cake calories.-->
+            <div class="form-group">
+                <label asp-for="CakeDto.Calories"></label>
+                <textarea asp-for="CakeDto.Calories" class="form-control"></textarea>
+                <span asp-validation-for="CakeDto.Calories"></span>
             </div>
             <div class="form-group">
                 <label asp-for="CakeDto.Price"></label>

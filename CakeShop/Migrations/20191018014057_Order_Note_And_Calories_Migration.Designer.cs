@@ -11,9 +11,10 @@ using System;
 namespace CakeShop.Migrations
 {
     [DbContext(typeof(CakeShopDbContext))]
-    partial class CakeShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191018014057_Order_Note_And_Calories_Migration")]
+    partial class Order_Note_And_Calories_Migration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -102,9 +103,6 @@ namespace CakeShop.Migrations
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasMaxLength(255);
-
-                    b.Property<string>("OrderNote")
                         .HasMaxLength(255);
 
                     b.Property<DateTime>("OrderPlacedTime");

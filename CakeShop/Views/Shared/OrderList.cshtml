@@ -43,6 +43,10 @@
                     <div>
                         @order.OrderPlacedTime.Date.ToString("dd/MM/yyyy")
                     </div>
+                    <div>
+                        <!--Adding the Order Note to the model for "My Orders" seciton-->
+                        @order.OrderPlaceDetails.OrderNote
+                    </div>
 
                 </td>
 

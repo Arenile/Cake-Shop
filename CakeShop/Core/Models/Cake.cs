@@ -32,5 +32,11 @@ namespace CakeShop.Core.Models
 
         public int CategoryId { get; set; }
         public Category Category { get; set; }
+
+        //Property for calories in the cake as it is displayed to users. Note that this is not actually displaying it, this just is the value that is displayed. 
+        [Required]
+        [Display(Name = "Calories")]
+        public int Calories { get; set; }
+
     }
 }

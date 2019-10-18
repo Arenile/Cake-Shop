@@ -34,17 +34,19 @@ namespace CakeShop.Persistence
                     LongDescription ="Icing carrot cake jelly-o cheesecake. tootsie roll oat cake pie chocolate bar cookie dragée brownie. Lollipop cotton candy cake bear claw oat cake.dragée gummies.",
                     Category = categories[0],
                     ImageUrl ="/img/vanilla-cake2.jpg",
-                    IsCakeOfTheWeek = true,
+                    IsCakeOfTheWeek = false,
+                    Calories = 500,
                 },
                 new Cake
                 {
                     Name ="Dark Chocolate Cake",
                     Price =45.50M,
                     ShortDescription ="Yammy! Dark Chocolate Flavour",
-                    LongDescription ="Icing carrot cake jelly-o cheesecake. tootsie roll oat cake pie chocolate bar cookie dragée brownie. Lollipop cotton candy cake bear claw oat cake.dragée gummies.",
+                    LongDescription ="Icing carrot cake jelly-o cheesecake. tootsie roll oat cake pie chocolate bar cookie dragée brownie. Lollipop cotton candy cake bear claw oat cake.dragée gummies.", 
                     Category = categories[1],
                     ImageUrl ="/img/chocolate-cake4.jpg",
-                    IsCakeOfTheWeek = true,
+                    IsCakeOfTheWeek = false,
+                    Calories = 550,
                 },
                 new Cake
                 {
@@ -55,6 +57,7 @@ namespace CakeShop.Persistence
                     Category = categories[1],
                     ImageUrl ="/img/chocolate-cake3.jpg",
                     IsCakeOfTheWeek = false,
+                    Calories = 550,
                 },
                 new Cake
                 {
@@ -64,7 +67,8 @@ namespace CakeShop.Persistence
                     LongDescription ="Icing carrot cake jelly-o cheesecake. tootsie roll oat cake pie chocolate bar cookie dragée brownie. Lollipop cotton candy cake bear claw oat cake.dragée gummies.",
                     Category = categories[0],
                     ImageUrl ="/img/vanilla-cake4.jpg",
-                    IsCakeOfTheWeek = true,
+                    IsCakeOfTheWeek = false,
+                    Calories = 550,
                 },
                 new Cake
                 {
@@ -74,7 +78,8 @@ namespace CakeShop.Persistence
                     LongDescription ="Icing carrot cake jelly-o cheesecake. tootsie roll oat cake pie chocolate bar cookie dragée brownie. Lollipop cotton candy cake bear claw oat cake.caramels.",
                     Category = categories[2],
                     ImageUrl ="/img/fruit-cake.jpg",
-                    IsCakeOfTheWeek =true,
+                    IsCakeOfTheWeek =false,
+                    Calories = 550,
                 }
 
             };

@@ -58,6 +58,10 @@ namespace CakeShop.Core.Models
         public string UserId { get; set; }
         public IdentityUser User { get; set; }
 
+        //Creation of the property in orders for a note the customer can add to their order. It is a string with a 255 character limit. 
+        [StringLength(255)]
+        public string OrderNote { get; set; }
+
         public ICollection<OrderDetail> OrderDetails { get; set; }
 
         public Order()

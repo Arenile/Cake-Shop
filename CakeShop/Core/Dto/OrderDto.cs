@@ -53,5 +53,16 @@ namespace CakeShop.Core.Dto
         [Display(Name = "Email Address")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+
+        //This code was for trying to make it possible to automatically order with a web API
+        /**[StringLength(255)]
+        public string CakeType { get; set; }
+
+        public int CakeNumber { get; set; }**/ 
+
+        //Creates the compoenent of OrderDto that holds the customer's note. Set up as a string, but note that this isn't a required form. 
+        [StringLength(255)]
+        [Display(Name = "Note for Order")]
+        public string OrderNote { get; set; }
     }
 }

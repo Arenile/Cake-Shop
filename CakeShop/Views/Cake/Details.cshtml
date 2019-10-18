@@ -14,6 +14,8 @@
         <p><i>@Model.Price.ToString("c")</i></p>
         <p>@Model.ShortDescription</p>
         <p>@Model.LongDescription</p>
+        <!--Here is where we display the calories in the details of each cake! Basically just using the model and outputting the integer as a string. -->
+        <p>@Model.Calories.ToString() Calories per slice</p>
         <form asp-action="AddToShoppingCart"
               asp-controller="ShoppingCart"
               asp-route-cakeId="@Model.Id"

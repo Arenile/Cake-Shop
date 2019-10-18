@@ -60,7 +60,9 @@ namespace CakeShop.Persistence
                         LastName = e.LastName,
                         PhoneNumber = e.PhoneNumber,
                         State = e.State,
-                        ZipCode = e.ZipCode
+                        ZipCode = e.ZipCode,
+                        //Adding the Order Note to the list of all orders
+                        OrderNote = e.OrderNote
                     },
                     CakeOrderInfos = e.OrderDetails.Select(o => new MyCakeOrderInfo
                     {
@@ -92,7 +94,9 @@ namespace CakeShop.Persistence
                         LastName = e.LastName,
                         PhoneNumber = e.PhoneNumber,
                         State = e.State,
-                        ZipCode = e.ZipCode
+                        ZipCode = e.ZipCode,
+                        //Adding the Order Note to the "My Orders" section for users
+                        OrderNote = e.OrderNote
                     },
                     CakeOrderInfos = e.OrderDetails.Select(o => new MyCakeOrderInfo
                     {

@@ -20,6 +20,11 @@ namespace CakeShop.Core.Dto
         [MaxLength(255)]
         public string LongDescription { get; set; }
 
+        //Calories property for the admins to edit. The type is integer so only integers can be entered for the ammount of calories in each cake.
+        [Required]
+        [Display(Name = "Calories")]
+        public int Calories { get; set; }
+
         [Required]
         [Display(Name = "Price")]
         public decimal Price { get; set; }

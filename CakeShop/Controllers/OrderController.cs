@@ -70,5 +70,15 @@ namespace CakeShop.Controllers
             var orders = await _orderRepository.GetAllOrdersAsync(userId);
             return View(orders);
         }
+
+        /**[Route("autoorder")]
+        [HttpPut]
+        public string Task<IActionResult> ([FromForm]OrderDto orderDto)
+        {
+
+            return "Order Completed Successfully";
+        }**/
+
     }
+    
 }
